@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="./images/content/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://climateclock.world/widget-v2.js" async></script>
+    <title>Carbon Credit Independent Proof</title>
+
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-dark bg-dark sticky-top navbar-expand-lg" style="font-size:smaller">
+            <!-- Navbar content -->
+            <a class="navbar-brand" href="./index.html">CCIP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+            <!-- <li class="nav-item active"> -->
+            <a class="nav-link" href="./index.html">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#Deploy">Deploy</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./mint.html">Mint</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./transfer.html">Transfer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./retire.html">Retire</a>
+            </li>
+            </ul>
+            </div>
+          </nav>
+    <div class="containerImg3" style="padding-top:10px">
+    <!-- <div class="container-fluid" style="width: 45%; margin-left: 80%;" >
+      <p>Test type</p>
+    </div> -->
+    <!-- <div class="container-fluid" style="width: 65%; padding-top: 30px; background-color: darkcyan; color:black; border-style: solid; border-radius: 5px; border-color: darkcyan;" > -->
+    <div class="container-fluid" style="width: 50%; padding-top: 30px; color: white; font-size: 12px; background-color: deepskyblue; border-style: solid; border-radius: 5px; border-color: deepskyblue;" >
+
+        <div class="row justify-content-center">
+          <h1 style="text-align:center; padding-top: 10px; " id="Deploy">Fill in the form and register CCIP</h1><br><br>
+        </div><br>
+        <div class="row">
+          <div class="col-sm-3" style = "margin-left: 10%;">
+            <label for="CBO">Carbon Registry</label>
+          </div>
+        <div class=" form-group col-sm-6" style="right: 3%;"> 
+          <!-- <label for="CBO">Carbon Registry Organisation</label> -->
+          <input type="text" class="form-control" placeholder="Eg. Verra, Gold Standard" id="CBO" style="font-size: 12px;">
+        </div>
+
+        </div><br>
+        <div class="row">
+        <div class="col-sm-3" style="margin-left: 10%;">
+          <label for="Project Name">Project Name</label>
+        </div>
+        <div class=" form-group col-sm-6" style="right:3%;">
+          <input type="text" class="form-control" placeholder="Insert project name" id="Project" style="font-size: 12px;">
+        </div>
+        </div><br>
+        <div class="row">
+          <div class="col-sm-3" style="margin-left: 10%;">
+            <label for="Organisation">Company</label>
+          </div>
+          <div class=" form-group col-sm-6" style="right:3%">
+            <input type="text" class="form-control" placeholder="Insert organisation name" id="Organisation" style="font-size: 12px;">
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-sm-3" style="margin-left: 10%;">
+            <label for="CCIPType">CCIP Type</label>
+          </div>
+          <div class=" form-group col-sm-6" style="right:3%;">
+            <select class="form-select" aria-label="Default select example" id="ccipType">
+              <option selected >Select</option>
+              <option value="1">M1</option>
+              <option value="2">M2</option>
+              <option value="3">M3</option>
+            </select>
+            
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-sm-3" style="margin-left: 10%;">
+            <label for="OffsetAmt">Offset amount</label>
+          </div>
+          <div class=" form-group col-sm-6" style="right:3%;">
+            <input type="number" class="form-control" placeholder="M1 = 1, M2 = 10, M3 = Specify" id="OffsetAmt" style="font-size: 12px;"><br>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-sm-3" style="margin-left: 10%;">
+            <label for="vintageYear">Vintage Year</label>
+          </div>
+          <div class=" form-group col-sm-6" style="right:3%;">
+            <input type="number" class="form-control" placeholder="Insert Vintage Year" id="vintageYear"><br>
+          </div>
+        </div><br>
+          <div class="row justify-content-center" style="padding-bottom: 20px;">
+          <button type="button" class="btn btn-dark" style="border-radius:10px;" onclick="App.deployContract()">Register</button>  
+          </div>
+        </div><br>
+        </div>
+        <div class="containerImg2" style="height: 720px;">
+          <div class="container" style="padding-top: 100px; width: 65%;">
+          <h1 style = "text-align:center; font-size: x-large; color: black" id="Next">
+            Next Step:
+          </h1><br>
+          <h3 style="text-align: left; color:black">
+            Deploying register the verified carbon credit on the blockchain.<br>
+            <br> Issue the carbon credit by minting.
+          </h3><br>
+          <div class="row justify-content-center" style="padding-bottom: 20px;">
+            <button type="button" class="btn btn-dark" style="border-radius:10px;" onclick="location.href = './mint.html'">Issue CCIP</button>  
+            </div>
+  
+            <!-- <div class="container" style="width: 50%; padding-top: 80px;">
+              <img src="./images/content/ccip x polygon.svg" alt="powered by Polygon" style="display:block"><br>
+              <h4 style="text-align: center;">
+                Powered by Polygon 
+              </h4>
+            </div> -->
+            <div class="container" style="width: 30%; padding-top: 10px;">
+              <img src="./images/content/ccip2 logo.svg" alt="powered by Polygon" style="display:block"><br>
+            </div>
+            <h4 style="text-align: center;">
+              Powered by
+            </h4>
+            <div class="container" style="width: 30%; padding-top: 10px;">
+              <img src="./images/content/polygon logo.svg" alt="" style="display:block"><br></div>
+        </div>
+      </div>
+    </div>
+    
+</body>
+</html>

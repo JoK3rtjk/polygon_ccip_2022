@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="./images/content/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://climateclock.world/widget-v2.js" async></script>
+    <title>Carbon Credit Independent Proof</title>
+</head>
+<body>
+    <div>
+    <nav class="navbar navbar-dark bg-dark sticky-top navbar-expand-lg" style="font-size:smaller">
+        <!-- Navbar content -->
+        <a class="navbar-brand" href="./index.html">CCIP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="./index.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./deploy.html">Deploy</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="./mint.html">Mint</a>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="#Transfer">Transfer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./retire.html">Retire</a>
+        </li>
+        </ul>
+        </div>
+      </nav>
+      <div class="containerImg3" style="padding-top:10px; height: 1000px;">
+      <div class="container-fluid" style="border-color:#B3FBEA; border-radius:10px; width: 65%; padding-top: 30px; color: white;">
+        <div class="row justify-content-center">
+          <h1 style="text-align:center;" id="Transfer">Transfer CCIP ownership</h1><br><br>
+        </div><br>
+        <div class="row">
+          <div class="col-sm-3" style = "margin-left: 10%;">
+            <label for="CCIPcontract1">CCIP address</label>
+          </div>
+          <div class=" form-group col-sm-6" style="right: 3%;"> 
+          <input type="text" class="form-control" id="CCIPcontract1">
+          <p style="font-size:x-small">Enter the CCIP contract address</p></div>
+          </div><br>
+          <div class="row">
+          <div class="col-sm-3" style = "margin-left: 10%;">
+            <label for="addressOwner1">CCIP New Owner address</label>
+          </div>
+          <div class=" form-group col-sm-6" style="right: 3%;"> 
+          <input type="text" class="form-control" id="addressOwner1"></div>
+          </div><br>
+          <div class="row justify-content-center" style="padding-bottom: 20px;">
+            <button type="button" class="btn btn-dark" style="border-radius:10px;" onclick="App.transfer()">Transfer ownership</button>  
+            </div>
+      </div><br>
+      </div>
+    </div>
+</body>
+</html>
