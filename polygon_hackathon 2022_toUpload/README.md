@@ -9,7 +9,7 @@
 *Register* - Registering on the front end will deploy CCIP with the user input as constructor. 
 
 ## 2. CCIP uses the same mint function as NFT 
-*Issue* - Issuing CCIP on the front end calls the mint function (note only CCIP deployer can mint), minting gives ownership to what the user inputs. Mint also changes the CCIP status to Active
+*Issue* - Issuing CCIP on the front end calls the mint function (note only CCIP deployer can mint and CCIP deployer ***cannot*** be CCIP owner), minting gives ownership to what the user inputs. Mint also changes the CCIP status to Active
 
 ## 3. CCIP uses the same transfer function as NFT
 *Transfer* - Transfer owernship of CCIP based on the user input (note only owner of CCIP can transfer).
